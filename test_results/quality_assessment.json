@@ -1,0 +1,101 @@
+{
+  "test_summary": {
+    "total_tests": 2,
+    "successful_tests": 2,
+    "average_quality_score": 77.67544623480903,
+    "average_processing_time": 2.5058577060699463,
+    "best_quality_score": 78.7668707953559,
+    "worst_quality_score": 76.58402167426216
+  },
+  "detailed_results": [
+    {
+      "test_name": "test_1_primary",
+      "timestamp": "2025-09-02T18:49:47.630025",
+      "person_image": "assets/person/00026_00.jpg",
+      "cloth_image": "assets/cloth/00087_00.jpg",
+      "processing_time_seconds": 2.8144588470458984,
+      "api_response_status": 200,
+      "person_metrics": {
+        "mean_brightness": 181.68060938517252,
+        "std_brightness": 70.47839129218436,
+        "contrast": 70.79645258981938,
+        "sharpness": 135.15458495568114,
+        "entropy": 6.179694175720215,
+        "aspect_ratio": 0.75,
+        "resolution": "768x1024",
+        "file_size_mb": 0.101959228515625,
+        "quality_score": 89.2638781229655
+      },
+      "cloth_metrics": {
+        "mean_brightness": 240.96334966023764,
+        "std_brightness": 26.452831326897954,
+        "contrast": 26.21631250346281,
+        "sharpness": 212.83623504638672,
+        "entropy": 2.365769147872925,
+        "aspect_ratio": 0.75,
+        "resolution": "768x1024",
+        "file_size_mb": 0.0594940185546875,
+        "quality_score": 52.40733006795247
+      },
+      "result_metrics": {
+        "mean_brightness": 195.0798916286892,
+        "std_brightness": 62.48770716735947,
+        "contrast": 63.703095703401296,
+        "sharpness": 155.3964514032834,
+        "entropy": 5.261153697967529,
+        "aspect_ratio": 0.75,
+        "resolution": "384x512",
+        "file_size_mb": 0.17948341369628906,
+        "quality_score": 76.58402167426216
+      },
+      "result_image_path": "test_results/test_1_primary_result.jpg",
+      "quality_improvement": -12.679856448703333,
+      "success": true
+    },
+    {
+      "test_name": "test_2_secondary",
+      "timestamp": "2025-09-02T18:49:51.837671",
+      "person_image": "assets/person/00010_00.jpg",
+      "cloth_image": "assets/cloth/00088_00.jpg",
+      "processing_time_seconds": 2.197256565093994,
+      "api_response_status": 200,
+      "person_metrics": {
+        "mean_brightness": 186.08564631144205,
+        "std_brightness": 78.48235823608839,
+        "contrast": 77.94319336149152,
+        "sharpness": 198.59152716110918,
+        "entropy": 6.3942413330078125,
+        "aspect_ratio": 0.75,
+        "resolution": "768x1024",
+        "file_size_mb": 0.1092672348022461,
+        "quality_score": 88.38287073771158
+      },
+      "cloth_metrics": {
+        "mean_brightness": 238.59332995944555,
+        "std_brightness": 12.134833257451524,
+        "contrast": 11.757505205764044,
+        "sharpness": 13.060160319010416,
+        "entropy": 3.0096495151519775,
+        "aspect_ratio": 0.75,
+        "resolution": "768x1024",
+        "file_size_mb": 0.046454429626464844,
+        "quality_score": 22.88133400811089
+      },
+      "result_metrics": {
+        "mean_brightness": 184.1656460232205,
+        "std_brightness": 71.71798456170934,
+        "contrast": 71.04284177080199,
+        "sharpness": 411.67327682663586,
+        "entropy": 5.792649269104004,
+        "aspect_ratio": 0.75,
+        "resolution": "384x512",
+        "file_size_mb": 0.19416236877441406,
+        "quality_score": 78.7668707953559
+      },
+      "result_image_path": "test_results/test_2_secondary_result.jpg",
+      "quality_improvement": -9.615999942355685,
+      "success": true
+    }
+  ],
+  "assessment_timestamp": "2025-09-02T18:49:53.837985"
+}

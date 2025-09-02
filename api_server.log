@@ -1,0 +1,885 @@
+🚀 MV-VTON API Server Startup Script
+=====================================
+🔧 Activating mv-vton conda environment...
+🧪 Checking high-quality checkpoint...
+✅ High-quality checkpoint found (14G)
+
+✅ High-quality setup verified! Starting API server...
+🌐 Server will be available at: http://localhost:5000
+📖 Health check: http://localhost:5000/health
+📋 Quality: HIGH (Frontal-View VTON checkpoint)
+
+Press Ctrl+C to stop the server
+=====================================
+
+🤖 High-quality API server started with PID: 134084
+📊 Expected quality: 77+ /100 (using Frontal-View VTON checkpoint)
+
+Some weights of the model checkpoint at openai/clip-vit-large-patch14 were not used when initializing CLIPVisionModel: ['text_model.encoder.layers.6.self_attn.v_proj.bias', 'text_model.encoder.layers.9.layer_norm1.bias', 'text_model.encoder.layers.8.mlp.fc2.weight', 'text_model.embeddings.position_ids', 'text_model.encoder.layers.9.mlp.fc1.bias', 'text_model.encoder.layers.9.mlp.fc2.bias', 'text_model.encoder.layers.2.mlp.fc2.weight', 'text_model.encoder.layers.2.self_attn.out_proj.bias', 'text_model.encoder.layers.6.layer_norm1.bias', 'text_model.encoder.layers.3.self_attn.out_proj.weight', 'text_model.encoder.layers.2.self_attn.out_proj.weight', 'text_model.encoder.layers.8.self_attn.out_proj.bias', 'text_model.encoder.layers.2.layer_norm2.bias', 'text_model.encoder.layers.9.self_attn.out_proj.weight', 'text_model.encoder.layers.6.mlp.fc2.weight', 'text_model.encoder.layers.9.self_attn.v_proj.weight', 'text_model.encoder.layers.10.self_attn.v_proj.weight', 'text_model.encoder.layers.8.layer_norm1.weight', 'text_model.encoder.layers.10.self_attn.q_proj.weight', 'text_model.encoder.layers.3.self_attn.v_proj.bias', 'text_model.encoder.layers.9.layer_norm2.bias', 'text_model.encoder.layers.11.self_attn.q_proj.bias', 'text_model.encoder.layers.0.mlp.fc2.weight', 'text_model.encoder.layers.4.self_attn.out_proj.bias', 'text_model.encoder.layers.1.mlp.fc2.bias', 'text_model.encoder.layers.1.layer_norm1.weight', 'text_model.encoder.layers.10.self_attn.out_proj.bias', 'text_model.encoder.layers.9.self_attn.out_proj.bias', 'text_model.encoder.layers.0.mlp.fc1.weight', 'text_model.encoder.layers.7.self_attn.k_proj.bias', 'text_model.encoder.layers.10.self_attn.k_proj.weight', 'text_model.encoder.layers.8.self_attn.q_proj.bias', 'text_model.encoder.layers.1.self_attn.k_proj.weight', 'text_model.encoder.layers.10.self_attn.q_proj.bias', 'text_model.encoder.layers.8.layer_norm2.weight', 'text_model.encoder.layers.6.layer_norm2.bias', 'text_model.encoder.layers.7.layer_norm2.bias', 'text_model.encoder.layers.7.self_attn.q_proj.bias', 'text_model.encoder.layers.7.self_attn.q_proj.weight', 'text_model.encoder.layers.9.self_attn.q_proj.bias', 'text_model.encoder.layers.6.self_attn.out_proj.bias', 'text_model.encoder.layers.4.self_attn.k_proj.weight', 'text_model.encoder.layers.5.mlp.fc1.weight', 'text_model.encoder.layers.5.self_attn.q_proj.weight', 'text_model.encoder.layers.0.self_attn.k_proj.bias', 'text_model.encoder.layers.7.self_attn.v_proj.bias', 'text_model.encoder.layers.3.self_attn.v_proj.weight', 'text_model.encoder.layers.0.self_attn.out_proj.bias', 'text_model.encoder.layers.9.mlp.fc1.weight', 'text_model.encoder.layers.3.mlp.fc2.bias', 'text_model.encoder.layers.9.self_attn.v_proj.bias', 'text_model.encoder.layers.6.self_attn.k_proj.weight', 'text_model.encoder.layers.2.layer_norm1.bias', 'text_model.encoder.layers.1.layer_norm2.bias', 'text_model.final_layer_norm.weight', 'text_model.encoder.layers.8.layer_norm2.bias', 'text_model.encoder.layers.2.mlp.fc1.weight', 'text_model.encoder.layers.2.self_attn.k_proj.weight', 'text_model.encoder.layers.7.self_attn.k_proj.weight', 'text_model.encoder.layers.6.self_attn.v_proj.weight', 'text_model.encoder.layers.11.self_attn.v_proj.weight', 'text_model.encoder.layers.5.layer_norm2.bias', 'text_model.encoder.layers.5.layer_norm2.weight', 'text_model.encoder.layers.10.layer_norm2.weight', 'text_model.encoder.layers.2.layer_norm1.weight', 'text_model.encoder.layers.10.self_attn.k_proj.bias', 'text_model.encoder.layers.3.mlp.fc2.weight', 'text_model.encoder.layers.9.layer_norm2.weight', 'text_model.encoder.layers.3.layer_norm2.weight', 'text_model.encoder.layers.4.self_attn.k_proj.bias', 'text_model.encoder.layers.6.layer_norm2.weight', 'text_model.encoder.layers.2.layer_norm2.weight', 'text_model.encoder.layers.8.mlp.fc1.bias', 'text_model.encoder.layers.3.layer_norm2.bias', 'text_model.encoder.layers.11.self_attn.k_proj.bias', 'text_model.encoder.layers.8.self_attn.q_proj.weight', 'text_model.encoder.layers.11.layer_norm2.weight', 'text_model.encoder.layers.6.mlp.fc1.bias', 'text_model.encoder.layers.5.self_attn.k_proj.bias', 'text_model.encoder.layers.4.layer_norm2.weight', 'text_model.encoder.layers.5.self_attn.k_proj.weight', 'text_model.encoder.layers.3.layer_norm1.bias', 'text_model.encoder.layers.1.self_attn.q_proj.bias', 'text_model.encoder.layers.6.self_attn.q_proj.bias', 'text_model.embeddings.token_embedding.weight', 'text_model.encoder.layers.7.layer_norm1.bias', 'text_model.encoder.layers.2.self_attn.q_proj.bias', 'text_model.encoder.layers.4.mlp.fc1.weight', 'text_model.encoder.layers.5.self_attn.v_proj.bias', 'text_model.encoder.layers.2.self_attn.v_proj.bias', 'text_model.encoder.layers.9.mlp.fc2.weight', 'text_model.encoder.layers.9.self_attn.k_proj.bias', 'text_model.encoder.layers.3.self_attn.k_proj.bias', 'text_model.encoder.layers.6.self_attn.out_proj.weight', 'text_model.encoder.layers.4.self_attn.out_proj.weight', 'text_model.encoder.layers.11.layer_norm2.bias', 'text_model.encoder.layers.11.layer_norm1.weight', 'text_model.encoder.layers.1.self_attn.k_proj.bias', 'text_model.encoder.layers.8.layer_norm1.bias', 'text_model.encoder.layers.4.mlp.fc2.bias', 'text_model.encoder.layers.9.self_attn.k_proj.weight', 'text_model.encoder.layers.4.self_attn.q_proj.weight', 'text_model.encoder.layers.3.layer_norm1.weight', 'text_model.encoder.layers.0.layer_norm2.bias', 'text_model.encoder.layers.11.self_attn.k_proj.weight', 'text_model.encoder.layers.3.mlp.fc1.weight', 'text_model.encoder.layers.1.self_attn.v_proj.weight', 'text_model.encoder.layers.5.mlp.fc2.weight', 'text_model.encoder.layers.8.mlp.fc2.bias', 'text_model.encoder.layers.4.self_attn.v_proj.weight', 'text_model.encoder.layers.6.mlp.fc2.bias', 'text_model.encoder.layers.9.layer_norm1.weight', 'text_model.encoder.layers.11.mlp.fc2.weight', 'text_model.encoder.layers.2.self_attn.k_proj.bias', 'text_model.encoder.layers.1.self_attn.out_proj.bias', 'text_model.encoder.layers.10.mlp.fc1.weight', 'text_model.encoder.layers.7.self_attn.v_proj.weight', 'text_model.encoder.layers.4.layer_norm2.bias', 'text_model.encoder.layers.0.layer_norm2.weight', 'text_model.encoder.layers.0.self_attn.v_proj.weight', 'text_model.encoder.layers.3.self_attn.q_proj.weight', 'text_model.encoder.layers.1.layer_norm2.weight', 'text_model.encoder.layers.5.self_attn.q_proj.bias', 'text_model.encoder.layers.2.self_attn.q_proj.weight', 'text_model.encoder.layers.0.self_attn.k_proj.weight', 'text_model.final_layer_norm.bias', 'text_model.encoder.layers.2.mlp.fc2.bias', 'text_model.encoder.layers.4.mlp.fc2.weight', 'text_model.encoder.layers.1.self_attn.out_proj.weight', 'text_model.encoder.layers.0.layer_norm1.weight', 'text_model.encoder.layers.8.self_attn.v_proj.weight', 'text_model.encoder.layers.4.layer_norm1.bias', 'text_model.encoder.layers.11.mlp.fc1.bias', 'text_model.encoder.layers.6.layer_norm1.weight', 'text_model.encoder.layers.4.self_attn.q_proj.bias', 'text_model.encoder.layers.4.self_attn.v_proj.bias', 'text_model.encoder.layers.7.self_attn.out_proj.bias', 'text_model.encoder.layers.1.mlp.fc2.weight', 'text_model.encoder.layers.10.layer_norm2.bias', 'text_model.encoder.layers.5.mlp.fc2.bias', 'text_model.encoder.layers.1.mlp.fc1.bias', 'text_model.embeddings.position_embedding.weight', 'text_model.encoder.layers.10.layer_norm1.weight', 'text_model.encoder.layers.1.self_attn.q_proj.weight', 'text_model.encoder.layers.1.layer_norm1.bias', 'text_model.encoder.layers.4.mlp.fc1.bias', 'text_model.encoder.layers.6.mlp.fc1.weight', 'logit_scale', 'text_model.encoder.layers.1.self_attn.v_proj.bias', 'text_model.encoder.layers.9.self_attn.q_proj.weight', 'text_model.encoder.layers.1.mlp.fc1.weight', 'text_model.encoder.layers.8.self_attn.k_proj.weight', 'text_model.encoder.layers.10.self_attn.v_proj.bias', 'text_model.encoder.layers.3.mlp.fc1.bias', 'text_model.encoder.layers.0.layer_norm1.bias', 'text_model.encoder.layers.3.self_attn.out_proj.bias', 'text_model.encoder.layers.7.mlp.fc2.bias', 'text_model.encoder.layers.3.self_attn.k_proj.weight', 'text_model.encoder.layers.5.layer_norm1.bias', 'text_model.encoder.layers.10.self_attn.out_proj.weight', 'text_model.encoder.layers.11.self_attn.out_proj.weight', 'text_model.encoder.layers.7.mlp.fc2.weight', 'text_model.encoder.layers.7.mlp.fc1.weight', 'text_model.encoder.layers.5.mlp.fc1.bias', 'text_model.encoder.layers.4.layer_norm1.weight', 'text_model.encoder.layers.11.self_attn.out_proj.bias', 'text_model.encoder.layers.11.self_attn.q_proj.weight', 'text_model.encoder.layers.0.mlp.fc1.bias', 'text_model.encoder.layers.11.mlp.fc2.bias', 'visual_projection.weight', 'text_model.encoder.layers.5.self_attn.v_proj.weight', 'text_model.encoder.layers.3.self_attn.q_proj.bias', 'text_model.encoder.layers.0.self_attn.v_proj.bias', 'text_model.encoder.layers.7.layer_norm1.weight', 'text_model.encoder.layers.8.self_attn.v_proj.bias', 'text_model.encoder.layers.0.self_attn.q_proj.weight', 'text_model.encoder.layers.10.layer_norm1.bias', 'text_model.encoder.layers.10.mlp.fc2.bias', 'text_projection.weight', 'text_model.encoder.layers.11.mlp.fc1.weight', 'text_model.encoder.layers.0.self_attn.out_proj.weight', 'text_model.encoder.layers.8.mlp.fc1.weight', 'text_model.encoder.layers.5.self_attn.out_proj.weight', 'text_model.encoder.layers.5.layer_norm1.weight', 'text_model.encoder.layers.6.self_attn.k_proj.bias', 'text_model.encoder.layers.6.self_attn.q_proj.weight', 'text_model.encoder.layers.8.self_attn.out_proj.weight', 'text_model.encoder.layers.5.self_attn.out_proj.bias', 'text_model.encoder.layers.0.mlp.fc2.bias', 'text_model.encoder.layers.8.self_attn.k_proj.bias', 'text_model.encoder.layers.10.mlp.fc2.weight', 'text_model.encoder.layers.2.mlp.fc1.bias', 'text_model.encoder.layers.11.self_attn.v_proj.bias', 'text_model.encoder.layers.10.mlp.fc1.bias', 'text_model.encoder.layers.0.self_attn.q_proj.bias', 'text_model.encoder.layers.7.self_attn.out_proj.weight', 'text_model.encoder.layers.7.layer_norm2.weight', 'text_model.encoder.layers.2.self_attn.v_proj.weight', 'text_model.encoder.layers.7.mlp.fc1.bias', 'text_model.encoder.layers.11.layer_norm1.bias']
+- This IS expected if you are initializing CLIPVisionModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing CLIPVisionModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+2025-09-02 20:12:53,203 - __main__ - INFO - 🔄 Initializing advanced preprocessing pipeline...
+✅ Advanced preprocessing (OpenPose + SCHP) available
+🚀 Starting MV-VTON Integrated API Server...
+📍 Working directory: /home/ubuntu/MV-VTON
+🐍 Python version: 3.8.5 (default, Sep  4 2020, 07:30:14) 
+[GCC 7.3.0]
+🔥 PyTorch version: 1.11.0
+🎯 CUDA available: True
+💾 GPU count: 1
+🔧 GPU name: NVIDIA A10
+
+============================================================
+🤖 INITIALIZING FRONTAL-VIEW VTON MODEL...
+============================================================
+Using device: cuda
+Loaded config from Frontal-View VTON/configs/viton512.yaml
+Loading model from Frontal-View VTON/checkpoint/vitonhd.ckpt
+Global Step: 10192
+LatentTryOnDiffusion: Running in eps-prediction mode
+DiffusionWrapper has 928.29 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 64, 64) = 16384 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+✅ Frontal-View VTON model loaded successfully!
+✅ DDIM sampler created!
+2025-09-02 20:12:53,203 - __main__ - INFO - 🔄 Initializing advanced preprocessing pipeline...
+🚀 Initializing Integrated MV-VTON Preprocessor...
+✅ OpenPose body model loaded
+✅ OpenPose hand model loaded
+/home/ubuntu/MV-VTON/pytorch-openpose/src/body.py:5: DeprecationWarning: Please use `gaussian_filter` from the `scipy.ndimage` namespace, the `scipy.ndimage.filters` namespace is deprecated.
+  from scipy.ndimage.filters import gaussian_filter
+/home/ubuntu/MV-VTON/pytorch-openpose/src/hand.py:6: DeprecationWarning: Please use `gaussian_filter` from the `scipy.ndimage` namespace, the `scipy.ndimage.filters` namespace is deprecated.
+  from scipy.ndimage.filters import gaussian_filter
+2025-09-02 20:12:55,726 - __main__ - INFO - ✅ Advanced preprocessing pipeline initialized!
+✅ SCHP atr model loaded
+✅ Integrated preprocessor initialized
+2025-09-02 20:12:55,726 - __main__ - INFO - ✅ Advanced preprocessing pipeline initialized!
+2025-09-02 20:12:55,727 - __main__ - INFO - 📋 Features: OpenPose 18-point detection + SCHP human parsing
+2025-09-02 20:12:55,727 - __main__ - INFO - 📋 Features: OpenPose 18-point detection + SCHP human parsing
+Global seed set to 42
+
+============================================================
+✅ FRONTAL-VIEW VTON MODEL READY!
+🌐 Starting FastAPI server on 0.0.0.0:5000
+📖 Available endpoints:
+   GET  /health - Health check and system status
+   GET  /model/info - Model configuration details
+   POST /try-on - Virtual try-on (returns base64 image)
+   POST /try-on-file - Virtual try-on (returns image file)
+   GET  /docs - Interactive API documentation
+   GET  /redoc - Alternative API documentation
+============================================================
+
+INFO:     Started server process [134084]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:5000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53338 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50510 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50514 - "GET /model/info HTTP/1.1" 200 OK
+2025-09-02 20:13:52,479 - __main__ - INFO - ============================================================
+2025-09-02 20:13:52,479 - __main__ - INFO - ============================================================
+2025-09-02 20:13:52,479 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 20:13:52,479 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 20:13:52,479 - __main__ - INFO - ============================================================
+2025-09-02 20:13:52,479 - __main__ - INFO - ============================================================
+2025-09-02 20:13:52,479 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 20:13:52,479 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 20:13:52,479 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 20:13:52,479 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 20:13:52,479 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 20:13:52,479 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 20:13:52,479 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 20:13:52,479 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 20:13:52,507 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 20:13:52,507 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 20:13:52,507 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 20:13:52,507 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 20:13:52,507 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 20:13:52,507 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 20:13:52,507 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+📸 Processing images: person=(768, 1024), cloth=(768, 1024)
+2025-09-02 20:13:52,507 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 20:13:52,507 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 20:13:52,507 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 20:13:52,507 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 20:13:52,507 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 20:13:53,423 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+🚀 Processing person image with integrated pipeline...
+  📍 Extracting pose keypoints with OpenPose...
+  🦴 Creating pose skeleton...
+  👤 Generating human parsing with SCHP...
+  ✅ Extracted SCHP parsing tensor: torch.Size([18, 128, 128])
+  👔 Creating clothing masks...
+  🎭 Generating person-agnostic image...
+  🎨 Creating inpaint mask...
+✅ Person processing complete!
+2025-09-02 20:13:53,423 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 20:13:53,423 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 20:13:53,423 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 20:13:53,439 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+  📐 Input shapes:
+     person: torch.Size([1, 3, 512, 384])
+     agnostic: torch.Size([1, 3, 512, 384])
+     cloth: torch.Size([1, 3, 512, 384])
+     mask: torch.Size([1, 1, 512, 384])
+🔧 Creating proper inpaint_image for Frontal-View VTON...
+     Following dataset methodology: feat * (1 - inpaint_mask) + person * inpaint_mask
+  🔧 inpaint_image shape: torch.Size([1, 3, 512, 384]) (will be encoded to 4 channels)
+  🔧 inpaint_mask shape: torch.Size([1, 1, 512, 384]) (will be resized to latent space)
+  🔧 DDIM will create 9-channel input: latent(4) + inpaint_image_latent(4) + mask_latent(1)
+2025-09-02 20:13:53,439 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 20:13:53,440 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 20:13:53,440 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 20:13:53,461 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 20:13:53,461 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 20:13:53,502 - __main__ - INFO - 🎨 Starting DDIM sampling...
+🎨 Running DDIM sampling...
+  📦 inpaint_image_latent shape: torch.Size([1, 4, 64, 48])
+  🔧 test_model_kwargs prepared:
+     inpaint_image (latent): torch.Size([1, 4, 64, 48])
+     inpaint_mask (resized): torch.Size([1, 1, 64, 48])
+2025-09-02 20:13:53,502 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 20:13:55,080 - __main__ - INFO - ✅ DDIM sampling completed successfully
+Data shape for DDIM sampling is (1, 4, 64, 48), eta 0.0
+Running DDIM Sampling with 31 timesteps
+2025-09-02 20:13:55,080 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 20:13:55,173 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+📤 Decoding from latent space...
+  📤 Final result: size=(384, 512), mode=RGB
+2025-09-02 20:13:55,173 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 20:13:55,173 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 20:13:55,173 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+INFO:     127.0.0.1:50526 - "POST /try-on HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59554 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59558 - "GET /model/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43878 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43748 - "GET /model/info HTTP/1.1" 200 OK
+2025-09-02 21:12:51,167 - __main__ - INFO - ============================================================
+2025-09-02 21:12:51,167 - __main__ - INFO - ============================================================
+2025-09-02 21:12:51,167 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:12:51,167 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:12:51,167 - __main__ - INFO - ============================================================
+2025-09-02 21:12:51,167 - __main__ - INFO - ============================================================
+2025-09-02 21:12:51,168 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 21:12:51,168 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 21:12:51,168 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 21:12:51,168 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 21:12:51,168 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:12:51,168 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:12:51,168 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:12:51,168 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:12:51,178 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:12:51,178 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:12:51,178 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:12:51,178 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:12:51,178 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:12:51,178 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:12:51,178 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+📸 Processing images: person=(768, 1024), cloth=(768, 1024)
+2025-09-02 21:12:51,178 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 21:12:51,178 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:12:51,178 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:12:51,178 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:12:51,178 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:12:51,565 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+🚀 Processing person image with integrated pipeline...
+  📍 Extracting pose keypoints with OpenPose...
+  🦴 Creating pose skeleton...
+  👤 Generating human parsing with SCHP...
+  ✅ Extracted SCHP parsing tensor: torch.Size([18, 128, 128])
+  👔 Creating clothing masks...
+  🎭 Generating person-agnostic image...
+  🎨 Creating inpaint mask...
+✅ Person processing complete!
+2025-09-02 21:12:51,565 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 21:12:51,565 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:12:51,565 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:12:51,580 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+  📐 Input shapes:
+     person: torch.Size([1, 3, 512, 384])
+     agnostic: torch.Size([1, 3, 512, 384])
+     cloth: torch.Size([1, 3, 512, 384])
+     mask: torch.Size([1, 1, 512, 384])
+🔧 Creating proper inpaint_image for Frontal-View VTON...
+     Following dataset methodology: feat * (1 - inpaint_mask) + person * inpaint_mask
+  🔧 inpaint_image shape: torch.Size([1, 3, 512, 384]) (will be encoded to 4 channels)
+  🔧 inpaint_mask shape: torch.Size([1, 1, 512, 384]) (will be resized to latent space)
+  🔧 DDIM will create 9-channel input: latent(4) + inpaint_image_latent(4) + mask_latent(1)
+2025-09-02 21:12:51,580 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 21:12:51,580 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:12:51,580 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:12:51,599 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:12:51,599 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:12:51,640 - __main__ - INFO - 🎨 Starting DDIM sampling...
+🎨 Running DDIM sampling...
+  📦 inpaint_image_latent shape: torch.Size([1, 4, 64, 48])
+  🔧 test_model_kwargs prepared:
+     inpaint_image (latent): torch.Size([1, 4, 64, 48])
+     inpaint_mask (resized): torch.Size([1, 1, 64, 48])
+2025-09-02 21:12:51,640 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 21:12:53,200 - __main__ - INFO - ✅ DDIM sampling completed successfully
+Data shape for DDIM sampling is (1, 4, 64, 48), eta 0.0
+Running DDIM Sampling with 31 timesteps
+2025-09-02 21:12:53,200 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 21:12:53,293 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+📤 Decoding from latent space...
+  📤 Final result: size=(384, 512), mode=RGB
+2025-09-02 21:12:53,293 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 21:12:53,293 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 21:12:53,293 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+INFO:     127.0.0.1:57124 - "POST /try-on HTTP/1.1" 200 OK
+2025-09-02 21:13:12,304 - __main__ - INFO - ============================================================
+2025-09-02 21:13:12,304 - __main__ - INFO - ============================================================
+2025-09-02 21:13:12,304 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:13:12,304 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:13:12,304 - __main__ - INFO - ============================================================
+2025-09-02 21:13:12,304 - __main__ - INFO - ============================================================
+2025-09-02 21:13:12,304 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 21:13:12,304 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 21:13:12,304 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 21:13:12,304 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 21:13:12,304 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:13:12,304 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:13:12,304 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:13:12,304 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:13:12,312 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:13:12,312 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:13:12,312 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:13:12,312 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:13:12,312 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:13:12,312 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:13:12,312 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+📸 Processing images: person=(768, 1024), cloth=(768, 1024)
+2025-09-02 21:13:12,312 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 21:13:12,312 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:13:12,312 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:13:12,312 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:13:12,312 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:13:12,671 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+🚀 Processing person image with integrated pipeline...
+  📍 Extracting pose keypoints with OpenPose...
+  🦴 Creating pose skeleton...
+  👤 Generating human parsing with SCHP...
+  ✅ Extracted SCHP parsing tensor: torch.Size([18, 128, 128])
+  👔 Creating clothing masks...
+  🎭 Generating person-agnostic image...
+  🎨 Creating inpaint mask...
+✅ Person processing complete!
+2025-09-02 21:13:12,671 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 21:13:12,672 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:13:12,672 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:13:12,686 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+  📐 Input shapes:
+     person: torch.Size([1, 3, 512, 384])
+     agnostic: torch.Size([1, 3, 512, 384])
+     cloth: torch.Size([1, 3, 512, 384])
+     mask: torch.Size([1, 1, 512, 384])
+🔧 Creating proper inpaint_image for Frontal-View VTON...
+     Following dataset methodology: feat * (1 - inpaint_mask) + person * inpaint_mask
+  🔧 inpaint_image shape: torch.Size([1, 3, 512, 384]) (will be encoded to 4 channels)
+  🔧 inpaint_mask shape: torch.Size([1, 1, 512, 384]) (will be resized to latent space)
+  🔧 DDIM will create 9-channel input: latent(4) + inpaint_image_latent(4) + mask_latent(1)
+2025-09-02 21:13:12,686 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 21:13:12,687 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:13:12,687 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:13:12,705 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:13:12,705 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:13:12,746 - __main__ - INFO - 🎨 Starting DDIM sampling...
+🎨 Running DDIM sampling...
+  📦 inpaint_image_latent shape: torch.Size([1, 4, 64, 48])
+  🔧 test_model_kwargs prepared:
+     inpaint_image (latent): torch.Size([1, 4, 64, 48])
+     inpaint_mask (resized): torch.Size([1, 1, 64, 48])
+2025-09-02 21:13:12,746 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 21:13:14,311 - __main__ - INFO - ✅ DDIM sampling completed successfully
+Data shape for DDIM sampling is (1, 4, 64, 48), eta 0.0
+Running DDIM Sampling with 31 timesteps
+2025-09-02 21:13:14,311 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 21:13:14,403 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+📤 Decoding from latent space...
+  📤 Final result: size=(384, 512), mode=RGB
+2025-09-02 21:13:14,403 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 21:13:14,403 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 21:13:14,403 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+INFO:     127.0.0.1:42476 - "POST /try-on HTTP/1.1" 200 OK
+2025-09-02 21:14:23,608 - __main__ - INFO - ============================================================
+2025-09-02 21:14:23,608 - __main__ - INFO - ============================================================
+2025-09-02 21:14:23,608 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:14:23,608 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:14:23,609 - __main__ - INFO - ============================================================
+2025-09-02 21:14:23,609 - __main__ - INFO - ============================================================
+2025-09-02 21:14:23,609 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 21:14:23,609 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 21:14:23,609 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 21:14:23,609 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 21:14:23,609 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:14:23,609 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:14:23,609 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:14:23,609 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:14:23,624 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:14:23,624 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:14:23,624 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:14:23,624 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:14:23,624 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:14:23,624 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:14:23,624 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+📸 Processing images: person=(768, 1024), cloth=(768, 1024)
+2025-09-02 21:14:23,624 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 21:14:23,624 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:14:23,624 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:14:23,624 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:14:23,624 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:14:23,980 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+🚀 Processing person image with integrated pipeline...
+  📍 Extracting pose keypoints with OpenPose...
+  🦴 Creating pose skeleton...
+  👤 Generating human parsing with SCHP...
+  ✅ Extracted SCHP parsing tensor: torch.Size([18, 128, 128])
+  👔 Creating clothing masks...
+  🎭 Generating person-agnostic image...
+  🎨 Creating inpaint mask...
+✅ Person processing complete!
+2025-09-02 21:14:23,980 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 21:14:23,980 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:14:23,980 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:14:23,994 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+  📐 Input shapes:
+     person: torch.Size([1, 3, 512, 384])
+     agnostic: torch.Size([1, 3, 512, 384])
+     cloth: torch.Size([1, 3, 512, 384])
+     mask: torch.Size([1, 1, 512, 384])
+🔧 Creating proper inpaint_image for Frontal-View VTON...
+     Following dataset methodology: feat * (1 - inpaint_mask) + person * inpaint_mask
+  🔧 inpaint_image shape: torch.Size([1, 3, 512, 384]) (will be encoded to 4 channels)
+  🔧 inpaint_mask shape: torch.Size([1, 1, 512, 384]) (will be resized to latent space)
+  🔧 DDIM will create 9-channel input: latent(4) + inpaint_image_latent(4) + mask_latent(1)
+2025-09-02 21:14:23,994 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 21:14:23,994 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:14:23,994 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:14:24,014 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:14:24,014 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:14:24,055 - __main__ - INFO - 🎨 Starting DDIM sampling...
+🎨 Running DDIM sampling...
+  📦 inpaint_image_latent shape: torch.Size([1, 4, 64, 48])
+  🔧 test_model_kwargs prepared:
+     inpaint_image (latent): torch.Size([1, 4, 64, 48])
+     inpaint_mask (resized): torch.Size([1, 1, 64, 48])
+2025-09-02 21:14:24,055 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 21:14:25,631 - __main__ - INFO - ✅ DDIM sampling completed successfully
+Data shape for DDIM sampling is (1, 4, 64, 48), eta 0.0
+Running DDIM Sampling with 31 timesteps
+2025-09-02 21:14:25,631 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 21:14:25,724 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+📤 Decoding from latent space...
+  📤 Final result: size=(384, 512), mode=RGB
+2025-09-02 21:14:25,724 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 21:14:25,724 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 21:14:25,724 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+INFO:     127.0.0.1:53852 - "POST /try-on HTTP/1.1" 200 OK
+2025-09-02 21:14:26,007 - __main__ - INFO - ============================================================
+2025-09-02 21:14:26,007 - __main__ - INFO - ============================================================
+2025-09-02 21:14:26,007 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:14:26,007 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:14:26,007 - __main__ - INFO - ============================================================
+2025-09-02 21:14:26,007 - __main__ - INFO - ============================================================
+2025-09-02 21:14:26,007 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 21:14:26,007 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 21:14:26,007 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 21:14:26,007 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 21:14:26,007 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:14:26,007 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:14:26,007 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:14:26,007 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:14:26,034 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:14:26,034 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:14:26,034 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:14:26,034 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:14:26,034 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:14:26,034 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:14:26,034 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+📸 Processing images: person=(768, 1024), cloth=(768, 1024)
+2025-09-02 21:14:26,034 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 21:14:26,034 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:14:26,034 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:14:26,034 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:14:26,034 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:14:26,352 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+🚀 Processing person image with integrated pipeline...
+  📍 Extracting pose keypoints with OpenPose...
+  🦴 Creating pose skeleton...
+  👤 Generating human parsing with SCHP...
+  ✅ Extracted SCHP parsing tensor: torch.Size([18, 128, 128])
+  👔 Creating clothing masks...
+  🎭 Generating person-agnostic image...
+  🎨 Creating inpaint mask...
+✅ Person processing complete!
+2025-09-02 21:14:26,352 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 21:14:26,352 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:14:26,352 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:14:26,367 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+  📐 Input shapes:
+     person: torch.Size([1, 3, 512, 384])
+     agnostic: torch.Size([1, 3, 512, 384])
+     cloth: torch.Size([1, 3, 512, 384])
+     mask: torch.Size([1, 1, 512, 384])
+🔧 Creating proper inpaint_image for Frontal-View VTON...
+     Following dataset methodology: feat * (1 - inpaint_mask) + person * inpaint_mask
+  🔧 inpaint_image shape: torch.Size([1, 3, 512, 384]) (will be encoded to 4 channels)
+  🔧 inpaint_mask shape: torch.Size([1, 1, 512, 384]) (will be resized to latent space)
+  🔧 DDIM will create 9-channel input: latent(4) + inpaint_image_latent(4) + mask_latent(1)
+2025-09-02 21:14:26,367 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 21:14:26,367 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:14:26,367 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:14:26,386 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:14:26,386 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:14:26,428 - __main__ - INFO - 🎨 Starting DDIM sampling...
+🎨 Running DDIM sampling...
+  📦 inpaint_image_latent shape: torch.Size([1, 4, 64, 48])
+  🔧 test_model_kwargs prepared:
+     inpaint_image (latent): torch.Size([1, 4, 64, 48])
+     inpaint_mask (resized): torch.Size([1, 1, 64, 48])
+2025-09-02 21:14:26,428 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 21:14:28,013 - __main__ - INFO - ✅ DDIM sampling completed successfully
+Data shape for DDIM sampling is (1, 4, 64, 48), eta 0.0
+Running DDIM Sampling with 31 timesteps
+2025-09-02 21:14:28,013 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 21:14:28,105 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+📤 Decoding from latent space...
+  📤 Final result: size=(384, 512), mode=RGB
+2025-09-02 21:14:28,105 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 21:14:28,105 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 21:14:28,105 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+INFO:     127.0.0.1:33454 - "POST /try-on HTTP/1.1" 200 OK
+2025-09-02 21:16:19,975 - __main__ - INFO - ============================================================
+2025-09-02 21:16:19,975 - __main__ - INFO - ============================================================
+2025-09-02 21:16:19,976 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:16:19,976 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:16:19,976 - __main__ - INFO - ============================================================
+2025-09-02 21:16:19,976 - __main__ - INFO - ============================================================
+2025-09-02 21:16:19,976 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 21:16:19,976 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 21:16:19,976 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 21:16:19,976 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 21:16:19,976 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:16:19,976 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:16:19,976 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:16:19,976 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:16:20,003 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:16:20,003 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:16:20,003 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:16:20,003 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:16:20,003 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:16:20,003 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:16:20,003 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+📸 Processing images: person=(768, 1024), cloth=(768, 1024)
+2025-09-02 21:16:20,003 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 21:16:20,003 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:16:20,003 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:16:20,003 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:16:20,003 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:16:20,328 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+🚀 Processing person image with integrated pipeline...
+  📍 Extracting pose keypoints with OpenPose...
+  🦴 Creating pose skeleton...
+  👤 Generating human parsing with SCHP...
+  ✅ Extracted SCHP parsing tensor: torch.Size([18, 128, 128])
+  👔 Creating clothing masks...
+  🎭 Generating person-agnostic image...
+  🎨 Creating inpaint mask...
+✅ Person processing complete!
+2025-09-02 21:16:20,328 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 21:16:20,328 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:16:20,328 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:16:20,344 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+  📐 Input shapes:
+     person: torch.Size([1, 3, 512, 384])
+     agnostic: torch.Size([1, 3, 512, 384])
+     cloth: torch.Size([1, 3, 512, 384])
+     mask: torch.Size([1, 1, 512, 384])
+🔧 Creating proper inpaint_image for Frontal-View VTON...
+     Following dataset methodology: feat * (1 - inpaint_mask) + person * inpaint_mask
+  🔧 inpaint_image shape: torch.Size([1, 3, 512, 384]) (will be encoded to 4 channels)
+  🔧 inpaint_mask shape: torch.Size([1, 1, 512, 384]) (will be resized to latent space)
+  🔧 DDIM will create 9-channel input: latent(4) + inpaint_image_latent(4) + mask_latent(1)
+2025-09-02 21:16:20,344 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 21:16:20,344 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:16:20,344 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 21:16:20,362 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:16:20,362 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:16:20,404 - __main__ - INFO - 🎨 Starting DDIM sampling...
+🎨 Running DDIM sampling...
+  📦 inpaint_image_latent shape: torch.Size([1, 4, 64, 48])
+  🔧 test_model_kwargs prepared:
+     inpaint_image (latent): torch.Size([1, 4, 64, 48])
+     inpaint_mask (resized): torch.Size([1, 1, 64, 48])
+2025-09-02 21:16:20,404 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 21:16:21,981 - __main__ - INFO - ✅ DDIM sampling completed successfully
+Data shape for DDIM sampling is (1, 4, 64, 48), eta 0.0
+Running DDIM Sampling with 31 timesteps
+2025-09-02 21:16:21,981 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 21:16:22,073 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+📤 Decoding from latent space...
+  📤 Final result: size=(384, 512), mode=RGB
+2025-09-02 21:16:22,073 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 21:16:22,074 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 21:16:22,074 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+INFO:     127.0.0.1:48952 - "POST /try-on HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51024 - "GET /model/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34100 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34104 - "GET /model/info HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50446 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50458 - "GET /model/info HTTP/1.1" 200 OK
+2025-09-02 21:24:12,798 - __main__ - INFO - ============================================================
+2025-09-02 21:24:12,798 - __main__ - INFO - ============================================================
+2025-09-02 21:24:12,798 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:24:12,798 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:24:12,798 - __main__ - INFO - ============================================================
+2025-09-02 21:24:12,798 - __main__ - INFO - ============================================================
+2025-09-02 21:24:12,798 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 21:24:12,798 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 21:24:12,798 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 21:24:12,798 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 21:24:12,798 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:24:12,798 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:24:12,798 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:24:12,798 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:24:12,823 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:24:12,823 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:24:12,823 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:24:12,823 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:24:12,823 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:24:12,823 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:24:12,823 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+📸 Processing images: person=(768, 1024), cloth=(768, 1024)
+2025-09-02 21:24:12,823 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 21:24:12,823 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:24:12,823 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:24:12,823 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:24:12,823 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:24:13,185 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+🚀 Processing person image with integrated pipeline...
+  📍 Extracting pose keypoints with OpenPose...
+  🦴 Creating pose skeleton...
+  👤 Generating human parsing with SCHP...
+  ✅ Extracted SCHP parsing tensor: torch.Size([18, 128, 128])
+  👔 Creating clothing masks...
+  🎭 Generating person-agnostic image...
+  🎨 Creating inpaint mask...
+✅ Person processing complete!
+2025-09-02 21:24:13,185 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 21:24:13,186 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:24:13,186 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:24:13,200 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+  📐 Input shapes:
+     person: torch.Size([1, 3, 512, 384])
+     agnostic: torch.Size([1, 3, 512, 384])
+     cloth: torch.Size([1, 3, 512, 384])
+     mask: torch.Size([1, 1, 512, 384])
+🔧 Creating proper inpaint_image for Frontal-View VTON...
+     Following dataset methodology: feat * (1 - inpaint_mask) + person * inpaint_mask
+  🔧 inpaint_image shape: torch.Size([1, 3, 512, 384]) (will be encoded to 4 channels)
+  🔧 inpaint_mask shape: torch.Size([1, 1, 512, 384]) (will be resized to latent space)
+  🔧 DDIM will create 9-channel input: latent(4) + inpaint_image_latent(4) + mask_latent(1)
+2025-09-02 21:24:13,200 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 21:24:13,200 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 21:24:13,200 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 21:24:13,218 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:24:13,218 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:24:13,259 - __main__ - INFO - 🎨 Starting DDIM sampling...
+🎨 Running DDIM sampling...
+  📦 inpaint_image_latent shape: torch.Size([1, 4, 64, 48])
+  🔧 test_model_kwargs prepared:
+     inpaint_image (latent): torch.Size([1, 4, 64, 48])
+     inpaint_mask (resized): torch.Size([1, 1, 64, 48])
+2025-09-02 21:24:13,259 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 21:24:14,835 - __main__ - INFO - ✅ DDIM sampling completed successfully
+Data shape for DDIM sampling is (1, 4, 64, 48), eta 0.0
+Running DDIM Sampling with 31 timesteps
+2025-09-02 21:24:14,835 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 21:24:14,927 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+📤 Decoding from latent space...
+  📤 Final result: size=(384, 512), mode=RGB
+2025-09-02 21:24:14,927 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 21:24:14,928 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 21:24:14,928 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+INFO:     127.0.0.1:50460 - "POST /try-on HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [134084]
+
+🛑 Shutting down API server...
+👋 API server stopped
+2025-09-02 21:33:21,788 - __main__ - INFO - 🔄 Initializing advanced preprocessing pipeline...
+2025-09-02 21:33:24,381 - __main__ - INFO - ✅ Advanced preprocessing pipeline initialized!
+2025-09-02 21:33:24,382 - __main__ - INFO - 📋 Features: OpenPose 18-point detection + SCHP human parsing
+2025-09-02 21:45:07,859 - __main__ - INFO - ============================================================
+2025-09-02 21:45:07,859 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 21:45:07,859 - __main__ - INFO - ============================================================
+2025-09-02 21:45:07,859 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 21:45:07,859 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 21:45:07,859 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 21:45:07,859 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 21:45:07,886 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 21:45:07,887 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 21:45:07,887 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 21:45:07,887 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 21:45:07,887 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 21:45:07,887 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 21:45:08,783 - __main__ - ERROR - ❌ Advanced preprocessing failed: 'parsing_mask'
+2025-09-02 21:45:08,783 - __main__ - INFO - 🔄 Falling back to simple preprocessing...
+2025-09-02 21:45:08,798 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 21:45:08,798 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 21:45:08,820 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 21:45:08,861 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 21:45:10,434 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 21:45:10,527 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 21:45:10,527 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 22:06:23,030 - __main__ - INFO - 🔄 Initializing advanced preprocessing pipeline...
+2025-09-02 22:06:25,584 - __main__ - INFO - ✅ Advanced preprocessing pipeline initialized!
+2025-09-02 22:06:25,585 - __main__ - INFO - 📋 Features: OpenPose 18-point detection + SCHP human parsing
+2025-09-02 22:06:52,072 - __main__ - INFO - ============================================================
+2025-09-02 22:06:52,072 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 22:06:52,072 - __main__ - INFO - ============================================================
+2025-09-02 22:06:52,072 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 22:06:52,072 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 22:06:52,072 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 22:06:52,072 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 22:06:52,090 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 22:06:52,094 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 22:06:52,094 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 22:06:52,094 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 22:06:52,095 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 22:06:52,095 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 22:06:53,064 - __main__ - INFO - ✅ Advanced preprocessing completed successfully
+2025-09-02 22:06:53,064 - __main__ - INFO -    🎯 Detected 18 keypoints via OpenPose
+2025-09-02 22:06:53,064 - __main__ - INFO -    🎨 Generated SCHP human parsing mask
+2025-09-02 22:06:53,073 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 22:06:53,073 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 22:06:53,095 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 22:06:53,137 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 22:06:54,728 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 22:06:54,821 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 22:06:54,821 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 22:08:07,004 - __main__ - INFO - ============================================================
+2025-09-02 22:08:07,004 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 22:08:07,004 - __main__ - INFO - ============================================================
+2025-09-02 22:08:07,004 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 22:08:07,004 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 22:08:07,004 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 22:08:07,004 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 22:08:07,029 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 22:08:07,029 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 22:08:07,029 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 22:08:07,029 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 22:08:07,029 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 22:08:07,029 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 22:08:07,354 - __main__ - INFO - ✅ Advanced preprocessing completed successfully
+2025-09-02 22:08:07,354 - __main__ - INFO -    🎯 Detected 18 keypoints via OpenPose
+2025-09-02 22:08:07,354 - __main__ - INFO -    🎨 Generated SCHP human parsing mask
+2025-09-02 22:08:07,363 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 22:08:07,363 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 22:08:07,382 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 22:08:07,423 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 22:08:08,983 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 22:08:09,076 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 22:08:09,076 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 22:08:44,749 - __main__ - INFO - ============================================================
+2025-09-02 22:08:44,749 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 22:08:44,749 - __main__ - INFO - ============================================================
+2025-09-02 22:08:44,749 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 22:08:44,749 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 22:08:44,749 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 22:08:44,749 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 22:08:44,771 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 22:08:44,771 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 22:08:44,771 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 22:08:44,772 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 22:08:44,772 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 22:08:44,772 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 22:08:45,086 - __main__ - INFO - ✅ Advanced preprocessing completed successfully
+2025-09-02 22:08:45,086 - __main__ - INFO -    🎯 Detected 18 keypoints via OpenPose
+2025-09-02 22:08:45,086 - __main__ - INFO -    🎨 Generated SCHP human parsing mask
+2025-09-02 22:08:45,094 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 22:08:45,095 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 22:08:45,113 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 22:08:45,154 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 22:08:46,731 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 22:08:46,824 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 22:08:46,824 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 22:09:20,000 - __main__ - INFO - ============================================================
+2025-09-02 22:09:20,000 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 22:09:20,000 - __main__ - INFO - ============================================================
+2025-09-02 22:09:20,000 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 22:09:20,000 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 22:09:20,000 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 22:09:20,000 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 22:09:20,023 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 22:09:20,024 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 22:09:20,024 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 22:09:20,024 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 22:09:20,024 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 22:09:20,024 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 22:09:20,340 - __main__ - INFO - ✅ Advanced preprocessing completed successfully
+2025-09-02 22:09:20,340 - __main__ - INFO -    🎯 Detected 18 keypoints via OpenPose
+2025-09-02 22:09:20,340 - __main__ - INFO -    🎨 Generated SCHP human parsing mask
+2025-09-02 22:09:20,348 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 22:09:20,349 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 22:09:20,367 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 22:09:20,408 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 22:09:21,982 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 22:09:22,074 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 22:09:22,074 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 22:49:59,034 - __main__ - INFO - ============================================================
+2025-09-02 22:49:59,034 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 22:49:59,034 - __main__ - INFO - ============================================================
+2025-09-02 22:49:59,034 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 22:49:59,034 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 22:49:59,034 - __main__ - INFO - ⚙️ Parameters: steps=50, scale=1.0, size=384x512
+2025-09-02 22:49:59,034 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 22:49:59,044 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 22:49:59,044 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 22:49:59,044 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 22:49:59,044 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=50, scale=1.0, size=512x384
+2025-09-02 22:49:59,044 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=50, scale=1.0, size=512x384
+2025-09-02 22:49:59,044 - __main__ - INFO - 🔄 Using simple preprocessing (advanced not available)
+2025-09-02 22:49:59,166 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 22:49:59,166 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 22:49:59,617 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 22:49:59,684 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 22:50:02,227 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 22:50:02,320 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 22:50:02,320 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 22:51:11,442 - __main__ - INFO - ============================================================
+2025-09-02 22:51:11,443 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 22:51:11,443 - __main__ - INFO - ============================================================
+2025-09-02 22:51:11,443 - __main__ - INFO - 📁 Person image: 00010_00.jpg (image/jpeg)
+2025-09-02 22:51:11,443 - __main__ - INFO - 📁 Cloth image: 00086_00.jpg (image/jpeg)
+2025-09-02 22:51:11,443 - __main__ - INFO - ⚙️ Parameters: steps=50, scale=1.0, size=384x512
+2025-09-02 22:51:11,443 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 22:51:11,450 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 22:51:11,450 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 22:51:11,450 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 22:51:11,450 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=50, scale=1.0, size=512x384
+2025-09-02 22:51:11,450 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=50, scale=1.0, size=512x384
+2025-09-02 22:51:11,450 - __main__ - INFO - 🔄 Using simple preprocessing (advanced not available)
+2025-09-02 22:51:11,557 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 22:51:11,557 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 22:51:11,575 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 22:51:11,616 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 22:51:14,138 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 22:51:14,230 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 22:51:14,230 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 22:51:32,821 - __main__ - INFO - ============================================================
+2025-09-02 22:51:32,821 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 22:51:32,821 - __main__ - INFO - ============================================================
+2025-09-02 22:51:32,821 - __main__ - INFO - 📁 Person image: 00010_00.jpg (image/jpeg)
+2025-09-02 22:51:32,821 - __main__ - INFO - 📁 Cloth image: 00086_00.jpg (image/jpeg)
+2025-09-02 22:51:32,821 - __main__ - INFO - ⚙️ Parameters: steps=50, scale=1.0, size=384x512
+2025-09-02 22:51:32,822 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 22:51:32,828 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 22:51:32,828 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 22:51:32,828 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 22:51:32,828 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=50, scale=1.0, size=512x384
+2025-09-02 22:51:32,828 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=50, scale=1.0, size=512x384
+2025-09-02 22:51:32,828 - __main__ - INFO - 🔄 Using simple preprocessing (advanced not available)
+2025-09-02 22:51:32,975 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 22:51:32,975 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 22:51:32,994 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 22:51:33,036 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 22:51:35,565 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 22:51:35,657 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 22:51:35,657 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 23:02:40,563 - __main__ - INFO - ============================================================
+2025-09-02 23:02:40,563 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 23:02:40,563 - __main__ - INFO - ============================================================
+2025-09-02 23:02:40,563 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 23:02:40,563 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 23:02:40,563 - __main__ - INFO - ⚙️ Parameters: steps=50, scale=1.0, size=384x512
+2025-09-02 23:02:40,563 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 23:02:40,570 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 23:02:40,570 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 23:02:40,570 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 23:02:40,570 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=50, scale=1.0, size=512x384
+2025-09-02 23:02:40,570 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=50, scale=1.0, size=512x384
+2025-09-02 23:02:40,570 - __main__ - INFO - 🔄 Using simple preprocessing (advanced not available)
+2025-09-02 23:02:40,695 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 23:02:40,695 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 23:02:40,714 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 23:02:40,755 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 23:02:43,324 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 23:02:43,416 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 23:02:43,416 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 23:06:18,073 - __main__ - INFO - ============================================================
+2025-09-02 23:06:18,073 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 23:06:18,073 - __main__ - INFO - ============================================================
+2025-09-02 23:06:18,073 - __main__ - INFO - 📁 Person image: person.png (image/png)
+2025-09-02 23:06:18,073 - __main__ - INFO - 📁 Cloth image: cloth.png (image/png)
+2025-09-02 23:06:18,073 - __main__ - INFO - ⚙️ Parameters: steps=30, scale=1.0, size=384x512
+2025-09-02 23:06:18,073 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 23:06:18,098 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 23:06:18,098 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 23:06:18,098 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 23:06:18,098 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=30, scale=1.0, size=512x384
+2025-09-02 23:06:18,098 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=30, scale=1.0, size=512x384
+2025-09-02 23:06:18,099 - __main__ - INFO - 🔄 Using simple preprocessing (advanced not available)
+2025-09-02 23:06:18,114 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 23:06:18,114 - __main__ - INFO - 🎯 CLIP input range: [-1.705, 2.135]
+2025-09-02 23:06:18,132 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 23:06:18,174 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 23:06:19,737 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 23:06:19,829 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 23:06:19,829 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 23:18:20,026 - __main__ - INFO - ============================================================
+2025-09-02 23:18:20,026 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 23:18:20,026 - __main__ - INFO - ============================================================
+2025-09-02 23:18:20,026 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 23:18:20,026 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 23:18:20,026 - __main__ - INFO - ⚙️ Parameters: steps=50, scale=1.0, size=384x512
+2025-09-02 23:18:20,026 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 23:18:20,035 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 23:18:20,036 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 23:18:20,036 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 23:18:20,036 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=50, scale=1.0, size=512x384
+2025-09-02 23:18:20,036 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=50, scale=1.0, size=512x384
+2025-09-02 23:18:20,036 - __main__ - INFO - 🔄 Using simple preprocessing (advanced not available)
+2025-09-02 23:18:20,054 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 23:18:20,054 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 23:18:20,496 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 23:18:20,563 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 23:18:23,176 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 23:18:23,269 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 23:18:23,269 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!
+2025-09-02 23:23:07,665 - __main__ - INFO - 🔄 Initializing advanced preprocessing pipeline...
+2025-09-02 23:23:10,389 - __main__ - INFO - ✅ Advanced preprocessing pipeline initialized!
+2025-09-02 23:23:10,390 - __main__ - INFO - 📋 Features: OpenPose 18-point detection + SCHP human parsing
+2025-09-02 23:23:35,075 - __main__ - INFO - ============================================================
+2025-09-02 23:23:35,075 - __main__ - INFO - 🔍 NEW VIRTUAL TRY-ON REQUEST
+2025-09-02 23:23:35,075 - __main__ - INFO - ============================================================
+2025-09-02 23:23:35,075 - __main__ - INFO - 📁 Person image: person.jpg (image/jpeg)
+2025-09-02 23:23:35,075 - __main__ - INFO - 📁 Cloth image: cloth.jpg (image/jpeg)
+2025-09-02 23:23:35,075 - __main__ - INFO - ⚙️ Parameters: steps=50, scale=1.0, size=384x512
+2025-09-02 23:23:35,075 - __main__ - INFO - 🔄 Loading images: Reading uploaded files
+2025-09-02 23:23:35,085 - __main__ - INFO - ✅ Images loaded successfully:
+2025-09-02 23:23:35,085 - __main__ - INFO -    Person image: (768, 1024)
+2025-09-02 23:23:35,085 - __main__ - INFO -    Cloth image: (768, 1024)
+2025-09-02 23:23:35,085 - __main__ - INFO - 🔄 Starting inference: Frontal-View VTON with steps=50, scale=1.0, size=512x384
+2025-09-02 23:23:35,085 - __main__ - INFO - 🚀 Starting Frontal-View VTON inference with steps=50, scale=1.0, size=512x384
+2025-09-02 23:23:35,085 - __main__ - INFO - 🚀 Using advanced preprocessing (OpenPose + SCHP)
+2025-09-02 23:23:35,932 - __main__ - INFO - ✅ Advanced preprocessing completed successfully
+2025-09-02 23:23:35,932 - __main__ - INFO -    🎯 Detected 18 keypoints via OpenPose
+2025-09-02 23:23:35,932 - __main__ - INFO -    🎨 Generated SCHP human parsing mask
+2025-09-02 23:23:35,941 - __main__ - INFO - 🎯 CLIP input shape: torch.Size([1, 3, 224, 224])
+2025-09-02 23:23:35,941 - __main__ - INFO - 🎯 CLIP input range: [-1.691, 2.123]
+2025-09-02 23:23:35,963 - __main__ - INFO - ✅ CLIP conditioning successful, shape: torch.Size([1, 1, 1024])
+2025-09-02 23:23:36,004 - __main__ - INFO - 🎨 Starting DDIM sampling...
+2025-09-02 23:23:38,516 - __main__ - INFO - ✅ DDIM sampling completed successfully
+2025-09-02 23:23:38,608 - __main__ - INFO - 🔄 Inference completed: Successfully generated result
+2025-09-02 23:23:38,608 - __main__ - INFO - ✅ Frontal-View VTON inference completed successfully!

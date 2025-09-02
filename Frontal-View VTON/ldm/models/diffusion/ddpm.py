@@ -493,7 +493,7 @@ class LatentDiffusion(DDPM):
         self.instantiate_first_stage(first_stage_config)
         self.instantiate_cond_stage(cond_stage_config)
         # -----------------------------------
-        self.local_controlnet = ControlNetModel.from_unet(UNet2DConditionModel.from_pretrained("/mnt/pfs-mc0p4k/cvg/team/didonglin/why/my_huggingface/Paint-by-Example", subfolder="unet"))
+        self.local_controlnet = ControlNetModel.from_unet(UNet2DConditionModel.from_pretrained("Fantasy-Studio/Paint-by-Example", subfolder="unet"))
         # -----------------------------------
 
         self.cond_stage_forward = cond_stage_forward

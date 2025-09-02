@@ -1,0 +1,13 @@
+checkpoint/
+checkpoints/
+models/
+*.pyc
+*.pyo
+*.prof
+__pycache__/
+Frontal-View\ VTON/checkpoint/
+Frontal-View\ VTON/models/
+pytorch-openpose/model/
+Self-Correction-Human-Parsing/checkpoints/
+.ipynb_checkpoints/
+.gradio/

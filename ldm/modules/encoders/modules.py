@@ -143,7 +143,7 @@ class FrozenCLIPImageEmbedder(AbstractEncoder):
 
     def __init__(self, version="openai/clip-vit-large-patch14"):
         super().__init__()
-        self.transformer = CLIPVisionModel.from_pretrained('/mnt/pfs-mc0p4k/cvg/team/didonglin/why/my_huggingface/clip-vit-large-patch14/')
+        self.transformer = CLIPVisionModel.from_pretrained('openai/clip-vit-large-patch14')
         self.final_ln = LayerNorm(1024)
         self.mapper = Transformer(
             1,

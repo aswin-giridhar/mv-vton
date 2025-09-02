@@ -145,7 +145,12 @@ class DDIMSampler(object):
             hijack_steps_ts = torch.full((b,), time_range[hijack_step - 1], device=device, dtype=torch.long)
             img = self.model.q_sample(hijack_feat, hijack_steps_ts)
 
-        iterator = tqdm(time_range, desc='DDIM Sampler', total=total_steps)
+        # Disable tqdm for API server to prevent broken pipe errors
+        try:
+            iterator = tqdm(time_range, desc='DDIM Sampler', total=total_steps, disable=not verbose)
+        except:
+            # Fallback: use plain iterator if tqdm fails  
+            iterator = time_range
 
         for i, step in enumerate(iterator):
             index = total_steps - i - 1
