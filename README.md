@@ -1,5 +1,5 @@
 # MV-VTON
-
+Testing implemetnation of **MV-VTON: Multi-View Virtual Try-On with Diffusion Models**(https://github.com/hywang2002/MV-VTON/)
 PyTorch implementation of **MV-VTON: Multi-View Virtual Try-On with Diffusion Models**
 
 [![arXiv](https://img.shields.io/badge/arXiv-2404.04908-b10.svg)](https://arxiv.org/abs/2404.17364)
